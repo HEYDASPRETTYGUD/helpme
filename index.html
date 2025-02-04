@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="images.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Page</title>
+    <title>My HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>HTML5</h1>
-        <p>I am trying.</p>
-        <ol>
-            <li>Apple</li>
-            <li>Banana</li>
-            <li>Orange</li>
-        </ol>
-    </main>
-
-    <figure>
-        <div><img src="images.jpg" style="width: 50%;" alt="Meow"></div>
-        <a href="https://youtu.be/dQw4w9WgXcQ?si=YFaEySIeNkHQ9yhH" style="text-decoration: none; display: inline-block; padding: 10px 20px; background-color: #008CBA; color: white; text-align: center; border-radius: 5px;">
-            Meow music
-        </a>
-        
-        <div><img src="images.jpg" style="width: 30%;" alt="Meow"></div>
-        <div><img src="images.jpg" style="width: 10%;" alt="Meow"></div>
-    </figure>
-
-    <footer>I am trying.</footer>
+    <h1 style="background-color: aquamarine;">Welcome to html</h1>
+    <div>This page goes kinda hard.</div>
+    <img src="giphy.gif" alt="cat" style="width:10%; float:left">
+    <img src="giphy.gif" alt="cat" style="width:10%; float:right">
+    <br>
+    <div>I love working 9 - 5 office hours IN THE OFFICE.</div>
+    <br>
+        <audio id="oiiaioiiiai">
+            <source src="oiiaioiiiai.mp3" type="audio/mpeg">
+            Your browser does not support audio playback.
+        </audio>    
+        <div><button onclick="playAudio()">Press if you do too</button></div>
+        <script>
+            function playAudio(){
+                document.getElementById("oiiaioiiiai").play()
+            }
+        </script>
+    <br>
+    <div style="margin-bottom: 500px;">Imagine only working 2.5 days a week.</div>
 </body>
+<footer>
+    <div style="font-size:small">Copyright© 2025 http://probably-not-a.great-site.net/index.html</div>
+</footer>
 </html>
