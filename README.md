@@ -8,3 +8,8 @@ sudo apt install \
   libnpp-dev nvidia-cuda-toolkit nvidia-cuda-dev \
   libvpx-dev libfdk-aac-dev libmp3lame-dev libopus-dev \
   libass-dev libfontconfig1-dev
+
+
+sudo find / -name cdio.pc 2>/dev/null
+
+export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH
