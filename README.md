@@ -14,3 +14,22 @@ sudo apt install \
 sudo find / -name cdio.pc 2>/dev/null
 
 export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH
+
+ubuntu@ubuntu-Precision-5540:~/ffmpeg$ nano Makefile 
+ubuntu@ubuntu-Precision-5540:~/ffmpeg$ make -j$(nproc)
+Makefile:1: *** Too many open files.  Stop.
+ubuntu@ubuntu-Precision-5540:~/ffmpeg$ sudo apt install libfreetype6-dev
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'libfreetype-dev' instead of 'libfreetype6-dev'
+libfreetype-dev is already the newest version (2.13.2+dfsg-1build3).
+The following packages were automatically installed and are no longer required:
+  nvidia-firmware-550-550.120 python3-netifaces
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.
+ubuntu@ubuntu-Precision-5540:~/ffmpeg$ make distclean
+Makefile:1: *** Too many open files.  Stop.
+ubuntu@ubuntu-Precision-5540:~/ffmpeg$ rm Makefile 
+ubuntu@ubuntu-Precision-5540:~/ffmpeg$ make distclean
+make: *** No rule to make target 'distclean'.  Stop.
